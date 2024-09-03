@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Podge AI Audio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #e0e0e0;
+            background-color: #121212; /* Dark background */
+            text-align: center;
+        }
+        header {
+            background-color: #1f1f1f; /* Slightly lighter dark background */
+            color: #e0e0e0;
+            padding: 40px 10px;
+            position: relative;
+        }
+        header img {
+            max-width: 50%; /* Responsive logo size */
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+        header h1 {
+            font-size: 2em; /* Adjusted size for better readability on smaller screens */
+            margin: 20px 0 10px;
+        }
+        header p {
+            font-size: 1em; /* Adjusted size for better readability on smaller screens */
+            margin: 0;
+        }
+        .signup-form {
+            background: #1e1e1e; /* Slightly lighter dark background for form */
+            padding: 30px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .signup-form input[type="email"],
+        .signup-form textarea {
+            padding: 15px;
+            width: 90%;
+            max-width: 400px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            margin-bottom: 10px;
+            background-color: #333; /* Darker background for the input */
+            color: #e0e0e0;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .signup-form button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            background-color: #32CD32; /* Accent color */
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .signup-form button:hover {
+            background-color: #28a745; /* Darker shade on hover */
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            margin: 30px auto;
+            max-width: 90%; /* Adjusted width for responsiveness */
+        }
+        .content img {
+            width: 70%;
+            height: auto;
+            max-width: 100%; /* Adjusted for responsiveness */
+            border-radius: 10px;
+        }
+        .content h2 {
+            font-size: 1.6em; /* Adjusted size for better mobile readability */
+            margin: 20px 0;
+        }
+        .content p {
+            font-size: 1em; /* Adjusted size for better mobile readability */
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #1f1f1f; /* Slightly lighter dark background */
+            color: #e0e0e0;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .audio-demo {
+            margin: 50px auto;
+            max-width: 60%; /* Adjusted width for responsiveness */
+        }
+        .audio-demo audio {
+            width: 65%;
+            max-width: 65%;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #333; /* Matching background color */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            header p {
+                font-size: 0.9em;
+            }
+            .signup-form input[type="email"],
+            .signup-form textarea,
+            .signup-form button {
+                width: 100%;
+                max-width: 100%;
+            }
+            .content h2 {
+                font-size: 1.4em;
+            }
+            .content p {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            header p {
+                font-size: 0.8em;
+            }
+            .signup-form input[type="email"],
+            .signup-form textarea,
+            .signup-form button {
+                width: 100%;
+                max-width: 100%;
+            }
+            .content h2 {
+                font-size: 1.2em;
+            }
+            .content p {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="./images/1.png" alt="Podge_Logo" />
+        <h1>Delivering AI Speech to the World</h1>
+        <p>We are building a platform for converting all written media into easily digestible podcasts
+        <br/>
+         using the top performing open-source text-to-speech models.
+        </p>
+
+        <!-- Signup Form -->
+        <div class="signup-form">
+            <form action="https://formspree.io/f/xjkbzyaz" method="POST">
+                <input type="email" name="email" placeholder="Email Address" required />
+                <textarea name="message" placeholder="Enter your name (optional)" rows="1"></textarea>
+                <button type="submit">Sign up to our waitlist</button>
+            </form>
+		  <br>
+		  <p>we will only use your data for contacting you about our app launch <br/> </p>
+        </div>
+	   <br>
+	   <br>
+        <div>
+            <audio controls>
+                <source src="./audio/PodgeGreetings17695_usaAnne.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </header>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Content Section -->
+        <div class="content">
+            <h2>We Democratize AI Speech Technology</h2>
+            <p>Our platform offers a seamless way to turn written content into engaging audio experiences.
+            <br/>
+             Listen to and share news articles, college readings, books wherever you are.
+             <br/>
+            Compose audio files using for creating your own content using realistic sounding AI voices.
+            <br/>
+
+            </p>
+            <img src="./images/people-2583444_1920.jpg" alt="Product Image" />
+            <p>Get more out of your commute and listen to podcasts of whatever topic you want.</p>
+        </div>
+
+        <!-- Audio Demos Section -->
+        <div class="audio-demo">
+            <h2>Listen to Some of Our Voices</h2>
+            <p>Shelly</p>
+            <audio controls>
+                <source src="./audio/shelly demo_usaShelly.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Kyle</p>
+            <audio controls>
+                <source src="./audio/kyle demo_usaKyle.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Melanie</p>
+            <audio controls>
+                <source src="./audio/melanie demo_usaMel.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Kenny</p>
+            <audio controls>
+                <source src="./audio/kenny demo_usaKenny.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Podge AI. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
