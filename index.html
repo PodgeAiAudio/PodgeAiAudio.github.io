@@ -41,26 +41,13 @@
             margin-top: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
-        .signup-form input[type="email"],
-        .signup-form textarea {
-            padding: 15px;
-            width: 90%;
-            max-width: 400px;
-            border: none;
-            border-radius: 25px;
-            font-size: 1em;
-            margin-bottom: 10px;
-            background-color: #333; /* Darker background for the input */
-            color: #e0e0e0;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
         .signup-form button {
-            padding: 15px 30px;
+            padding: 20px 40px; /* Adjusted padding for better proportions */
             border: none;
             border-radius: 25px;
             background-color: #32CD32; /* Accent color */
             color: #fff;
-            font-size: 1em;
+            font-size: 1.5em; /* Increased font size for emphasis */
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
@@ -120,11 +107,10 @@
             header p {
                 font-size: 0.9em;
             }
-            .signup-form input[type="email"],
-            .signup-form textarea,
             .signup-form button {
                 width: 100%;
                 max-width: 100%;
+                font-size: 1.2em; /* Adjusted font size for smaller screens */
             }
             .content h2 {
                 font-size: 1.4em;
@@ -141,11 +127,10 @@
             header p {
                 font-size: 0.8em;
             }
-            .signup-form input[type="email"],
-            .signup-form textarea,
             .signup-form button {
                 width: 100%;
                 max-width: 100%;
+                font-size: 1em; /* Adjusted font size for smaller screens */
             }
             .content h2 {
                 font-size: 1.2em;
@@ -164,18 +149,12 @@
         <h1>Delivering AI Speech to the World</h1>
         <p>We are building a platform for converting all written media into easily digestible podcasts
         <br/>
-         using the top performing open-source text-to-speech models.
+         using the top performing open-source text-to-speech models from Piper TTS.
         </p>
 
         <!-- Signup Form -->
         <div class="signup-form">
-            <form action="https://formspree.io/f/xjkbzyaz" method="POST">
-                <input type="email" name="email" placeholder="Email Address" required />
-                <textarea name="message" placeholder="Enter your name (optional)" rows="1"></textarea>
-                <button type="submit">Sign up to our waitlist</button>
-            </form>
-		  <br>
-		  <p>we will only use your data for contacting you about our app launch <br/> </p>
+            <button onclick="window.location.href='https://www.podgeai.com/'">Go to the App</button>
         </div>
 	   <br>
 	   <br>
@@ -191,7 +170,7 @@
     <div class="container">
         <!-- Content Section -->
         <div class="content">
-            <h2>We Democratize AI Speech Technology</h2>
+            <h2>Democratize AI Speech Technology</h2>
             <p>Our platform offers a seamless way to turn written content into engaging audio experiences.
             <br/>
              Listen to and share news articles, college readings, books wherever you are.
@@ -207,7 +186,12 @@
         <!-- Audio Demos Section -->
         <div class="audio-demo">
             <h2>Listen to Some of Our Voices</h2>
-            <p>Shelly</p>
+            <p>All US voices are trained with data from the libritts R dataset https://www.openslr.org/141/</p>
+            <p>Jenny voice is trained using data from https://github.com/dioco-group/jenny-tts-dataset</https:></p>
+            <p>Alba voice is trained using data from https://datashare.ed.ac.uk/handle/10283/3270</p>
+            <p></p>
+
+                <p>Shelly</p>
             <audio controls>
                 <source src="./audio/shelly demo_usaShelly.wav" type="audio/wav">
                 Your browser does not support the audio element.
