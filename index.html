@@ -99,6 +99,23 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
+        /* New styles for the demo video section */
+        .demo-video {
+            margin: 50px auto;
+            max-width: 800px; /* Adjust as needed */
+            text-align: center;
+        }
+        .demo-video video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .demo-video h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
         /* Responsive styles */
         @media (max-width: 768px) {
             header h1 {
@@ -146,7 +163,7 @@
     <!-- Header -->
     <header>
         <img src="./images/1.png" alt="Podge_Logo" />
-        <h1>Delivering AI Text to Speech for Free</h1>
+        <h1>Delivering AI Speech to the World</h1>
         <p>We are building a platform for converting all written media into easily digestible podcasts
         <br/>
          using the top performing open-source text-to-speech models from Piper TTS.
@@ -168,6 +185,15 @@
 
     <!-- Container -->
     <div class="container">
+        <!-- Demo Video Section -->
+        <div class="demo-video">
+            <h2>How to Use Podge AI</h2>
+            <video controls>
+                <source src="Untitled video - Made with Clipchamp (2).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
         <!-- Content Section -->
         <div class="content">
             <h2>Democratize AI Speech Technology</h2>
@@ -177,7 +203,6 @@
              <br/>
             Compose audio files using for creating your own content using realistic sounding AI voices.
             <br/>
-
             </p>
             <img src="./images/people-2583444_1920.jpg" alt="Product Image" />
             <p>Get more out of your commute and listen to podcasts of whatever topic you want.</p>
